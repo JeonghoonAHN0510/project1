@@ -4,13 +4,13 @@ function getuserList(){
     if( userList == null ){
         userList =[];
     }else {
-        userList = JSON.stringify( userList );
+        userList = JSON.parse( userList );
     }
     return userList;
 }
 //================================localStorage에 userList 저장하기================================
 function setuserList(userList){
-    localStorage.setItem('userList', JSON.parse(userList));
+    localStorage.setItem('userList', JSON.stringify(userList));
 }
 //================================localStorage에서 rList 가져오기================================
 function getrList(){
@@ -18,7 +18,7 @@ function getrList(){
     if( rList == null ){
         rList = [];
     }else {
-        rList = JSON.stringify( rList );
+        rList = JSON.parse( rList );
     }
     return rList;
 }
