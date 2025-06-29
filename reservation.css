@@ -1,0 +1,70 @@
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+/*==========================공통 CSS==========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'S-CoreDream-3Light';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+/*==========================본문 CSS==========================*/
+#container{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+/*==========================본문 사이드바 CSS==========================*/
+.re_sidebar{
+    width: 180px;
+    text-align: center;
+}
+.re_sidebar h3{
+    background-color: #c0d968;
+    padding: 15px 0px;
+}
+.re_sidebar li{
+    padding: 20px 0px;
+}
+.re_sidebar li:hover .re_sidebarAtag{
+    border-bottom: 1px solid gray;
+}
+/*==========================본문 내용 CSS==========================*/
+.re_content{
+    width: 1180px;
+}
+.re_content th{
+    padding: 30px 70px;
+}
+.re_btn1{
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0px 5px;
+}
+.re_price{
+    width: 500px;
+}
+.re_btn2{
+    width: 120px;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: #c0d968;
+    border-radius: 20px;
+}
+.textarea{
+    width: 350px;
+    height: 80px;
+}
