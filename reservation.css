@@ -23,6 +23,7 @@ li{
     display: flex;
     width: 1280px;
     margin: 0 auto;
+    min-height: 750px;
 }
 /*==========================본문 사이드바 CSS==========================*/
 .re_sidebar{
