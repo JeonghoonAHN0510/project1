@@ -1,4 +1,4 @@
-//================================localStorage에서 userList 가져오기================================
+/*//================================localStorage에서 userList 가져오기================================
 function getuserList(){
     let userList = localStorage.getItem('userList');
     if( userList == null ){
@@ -26,6 +26,7 @@ function getrList(){
 function setpList(rList){
     localStorage.setItem('rList', rList );
 }
+    */
 let pList = [
     {pcode : 1, pname : 'A룸', pmax : 2, pprice : 150000},
     {pcode : 2, pname : 'B룸', pmax : 2, pprice : 200000},
