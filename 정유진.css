@@ -1,0 +1,70 @@
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#header, #footer{
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#main{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+.m_sidebar{
+    width: 200px;
+}
+.m_sidebar > ul{
+    text-align: center;
+}
+.m_sidebar > ul > li{
+    padding: 20px 10px;
+}
+.m_sidebar_select{
+    background-color: #c0d968;
+    border: 2px solid white;
+}
+.m_table_div{
+    width: 1000px;
+    margin: 0 auto;
+}
+.m_table{
+    width: 950px;
+    margin: 0px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.m_table > thead > tr{
+    height: 60px;
+}
+.m_table_title{
+    text-align: left;
+    padding-left: 25px;
+    font-size: 25px;
+    background-color: #eeeeee;
+}
+.m_table > tbody > tr{
+    height: 40px;
+}
+.m_table > tbody > tr  > td > button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #c0d968;
+}
