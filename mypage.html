@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>StayPlan</title>
+    <link rel="shortcut icon" href="stayplan logo.png">
+    <link rel='stylesheet' href='mypage.css'>
+    <link rel='stylesheet' href='reservation.css'>
+    <link rel='stylesheet' href='공통css.css'>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="headerwrap">
+            <div id="header">
+                <div class="logo">
+                    <img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" />
+                </div>
+                <div class="logtopMenu">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">관리자</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="container">        <!-- 본문 시작 -->
+            <div class="re_sidebar"><!-- 본문 사이드바 -->
+                <h3>마이페이지</h3>
+                <ul>
+                    <li><a class="re_sidebarAtag" href="">마이페이지</a></li>
+                    <li><a class="re_sidebarAtag" href="">예약하기</a></li>
+                    <li><a class="re_sidebarAtag" href="">객실정보</a></li>
+                    <li><a class="re_sidebarAtag" href="">숙소위치</a></li>
+                </ul>
+            </div>                  <!-- 본문 사이드바 끝 -->
+            <div class="re_mypage"><!-- 본문 내용 시작-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="myre" colspan="6">나의 예약</th>
+                        </tr>
+                        <tr class="myhead">
+                            <th>객실 종류</th>
+                            <th>입실일</th>
+                            <th>퇴실일</th>
+                            <th>요청사항</th>
+                            <th>예약상태</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mypage_table">
+                        <tr>
+                            <td>A룸</td>
+                            <td>2025-06-15</td>
+                            <td>2025-06-17</td>
+                            <td>반려동물 데려갈게요</td>
+                            <td>예약 완료</td>
+                            <td>
+                                <button>수정</button>
+                                <button>삭제</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A룸</td>
+                            <td>2025-06-15</td>
+                            <td>2025-06-17</td>
+                            <td>반려동물 데려갈게요</td>
+                            <td>예약 완료</td>
+                            <td>
+                                <button>수정</button>
+                                <button>삭제</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A룸</td>
+                            <td>2025-06-15</td>
+                            <td>2025-06-17</td>
+                            <td>반려동물 데려갈게요</td>
+                            <td>예약 완료</td>
+                            <td>
+                                <button>수정</button>
+                                <button>삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                  <!-- 본문 내용 끝 -->
+        </div>                      <!-- 본문 끝 -->
+
+        <div id="footerwrap">
+            <div id="footer">
+                <p class="footerTop">스테이플랜</p><br />
+                숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src='mypage.js'></script>
+    <script src='update.js'></script>
+</body>
+
+</html>

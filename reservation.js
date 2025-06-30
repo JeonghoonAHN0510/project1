@@ -1,3 +1,9 @@
+/*
+수정할 점
+1. usercode 쿼리스트링 만들어내기
+- 로그인 페이지와 함께
+2. rCondition 정하기
+*/
 //================================객실 종류에 option 추가 함수================================
 // 실행조건 : 페이지가 실행되었을 때
 productOption();
@@ -63,4 +69,34 @@ function pricePrint(){
         }
     }
     price.innerHTML = html;
+}
+//================================예약 신청 버튼 함수================================
+// 실행조건 : 예약신청 버튼이 눌렸을 때
+function reservationBtn(){
+    console.log('reservationBtn 실행');
+    // 입력값 가져오기
+    let inDate = document.querySelector('.re_inDate').value;        console.log( inDate );
+    let outDate = document.querySelector('.re_outDate').value;      console.log( outDate );
+    let pcode = document.querySelector('.re_pInput').value;         console.log( pcode );
+    let people = document.querySelector('.re_btnValue').innerHTML;  console.log( people );
+    let rRequest = document.querySelector('.textarea').value;       console.log( rRequest );
+    const url = new URLSearchParams(location.search);
+    const getUsercode = url.get('usercode');
+    // 가져온 입력값을 객체화 해서
+    // let rList = getrList();
+    let rcode = rList.length == 0 ? 1 : rList[rList.length - 1].rcode + 1;
+    let obj = {
+        rcode,
+        userCode : getUsercode,               // userCode 수정 필요!!!!!!
+        pcode,
+        rRequest,
+        inDate,
+        outDate,
+        people,
+        rCondition : '예약 신청'    // rCondition 수정 필요!!!!!
+    }
+    // rList에 obj를 push 하기
+    rList.push( obj );
+    // localStorage의 rList에 저장하기
+    setrList(rList);
 }
