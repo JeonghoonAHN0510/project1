@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정유진</title>
     <link rel="stylesheet" href="정유진.css">
+
 </head>
 <body>
     <div id="wrap">
@@ -34,7 +35,7 @@
                             <th>예약상태</th>
                             <th>관리</th>
                         </tr>
-                    <tbody>
+                    <tbody class="m_tbody">
                         <tr>
                             <td>B룸</td>
                             <td>2025-06-17</td>
@@ -42,8 +43,7 @@
                             <td>반려동물 데려갈게요</td>
                             <td>이용중</td>
                             <td>
-                                <button>수정</button>
-                                <button>삭제</button>
+                                <button onclick="m_removeBtn()">삭제</button>
                             </td>
                         </tr>
                         <tr>
@@ -53,8 +53,7 @@
                             <td>침대 두 개</td>
                             <td>이용중</td>
                             <td>
-                                <button>수정</button>
-                                <button>삭제</button>
+                                <button onclick="m_removeBtn()">삭제</button>
                             </td>
                         </tr>
                         <tr>
@@ -64,8 +63,7 @@
                             <td>베개 다섯 개</td>
                             <td>취소</td>
                             <td>
-                                <button>수정</button>
-                                <button>삭제</button>
+                                <button onclick="m_removeBtn()">삭제</button>
                             </td>
                         </tr>
                         <tr>
@@ -75,8 +73,7 @@
                             <td>난방 틀어주세요	</td>
                             <td>완료</td>
                             <td>
-                                <button>수정</button>
-                                <button>삭제</button>
+                                <button onclick="m_removeBtn()">삭제</button>
                             </td>
                         </tr>
                         <tr>
@@ -86,8 +83,7 @@
                             <td>에어컨 틀어주세요</td>
                             <td>예약완료</td>
                             <td>
-                                <button>수정</button>
-                                <button>삭제</button>
+                                <button onclick="m_removeBtn()">삭제</button>
                             </td>
                         </tr>
                     </tbody>
@@ -96,5 +92,6 @@
         </div>
         <div id="footer"></div> <!--footer-->
     </div>
+    <script src="정유진.js"></script>
 </body>
 </html>
