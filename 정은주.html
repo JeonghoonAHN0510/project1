@@ -3,120 +3,23 @@
 
 <head>
     <meta charset='utf-8'>
-
-    <style>
-        @font-face {
-            font-family: 'S-CoreDream-3Light';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        #wrap {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* 헤더 */
-        #header {
-            background-color: #c0d968;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 48px;
-        }
-
-        .logo img {
-            width: 140px;
-            margin: -40px 0px;
-        }
-
-        .logtopMenu a {
-            margin-left: 50px;
-            text-decoration: none;
-            color: #5a5a89;
-            font-weight: 500;
-            font-size: 18px;
-        }
-
-        /* 메인 */
-        #logmain {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        #logmain h2 {
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-
-        .login {
-            width: 100%;
-            max-width: 350px;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        .login input {
-            padding: 20px;
-            margin: 10px 0px;
-            font-size: 18px;
-            border-radius: 30px;
-            border: 2px solid black;
-        }
-
-        .login button {
-            width: 30%;
-            margin: 0% auto;
-            padding: 5px;
-            border: none;
-            border-radius: 30px;
-            background-color: #c0d968;
-            color: #fff;
-            font-size: 20px;
-        }
-
-
-        /* 푸터 */
-        #footer {
-            background-color: #f7f7f7;
-            padding: 24px 48px;
-            text-align: right;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .footerTop {
-            margin-right: 260px;
-        }
-    </style>
+    <link rel='stylesheet' href='공통css.css'>
 </head>
 
 <body>
 
     <div id="wrap">
 
-        <div id="header">
-            <div class="logo">
-                <img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" />
-            </div>
-            <div class="logtopMenu">
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <a href="#">관리자</a>
+        <div id="headerwrap">
+            <div id="header">
+                <div class="logo">
+                    <img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" />
+                </div>
+                <div class="logtopMenu">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">관리자</a>
+                </div>
             </div>
         </div>
 
@@ -131,17 +34,18 @@
             </div>
         </div>
 
-
-        <div id="footer">
-            <p class="footerTop">스테이플랜</p><br />
-            숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+        <div id="footerwrap">
+            <div id="footer">
+                <p class="footerTop">스테이플랜</p><br />
+                숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+            </div>
         </div>
 
     </div>
 </body>
 
 </html>
-<script src='정은주.js'></script>
+    <script src='정은주.js'></script>
 </body>
 
 </html>
