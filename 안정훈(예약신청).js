@@ -109,7 +109,7 @@ function namePrint(){
     console.log( userCode );
     let userList = getuserList();
     // 어디에 .logtopMenu에
-    let logtop = document.querySelector('.logtopMenu');
+    let logtop = document.querySelector('.userName');
     let html = ``;
     for ( let i = 0; i < userList.length; i++){
         let user = userList[i];

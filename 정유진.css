@@ -8,12 +8,15 @@ a{
 li{
     list-style: none;
 }
-
+.managerName{
+    font-size: 20px;
+}
 #main{
     background-color: white;
     display: flex;
     width: 1280px;
     margin: 0 auto;
+    min-height: 750px;
 }
 .m_sidebar{
     width: 200px;

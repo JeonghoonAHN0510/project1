@@ -1,14 +1,45 @@
-.re_mypage{
-    width: 1180px;
-    padding: 50px 140px;
+
+.re_sidebar{
+    width: 200px;
+}
+.re_sidebar > ul{
     text-align: center;
 }
-.myre{
-    padding: 10px 0px;
-    font-size: 35px;
+.re_sidebar > ul > li{
+    padding: 20px 10px;
+    border-bottom: 1px solid #c1c1c1;
 }
-.myhead th{
-    font-size: 20px;
-    width: 150px;
-    padding: 10px 0px;
+.re_sidebar_select{
+    background-color: #c0d968;
+    border: 2px solid white;
+}
+.re_mypage{
+    width: 1000px;
+    margin: 0 auto;
+}
+.re_table{
+    width: 950px;
+    margin: 30px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.re_table > thead > tr{
+    height: 60px;
+}
+.myre{
+    text-align: left;
+    padding-left: 25px;
+    font-size: 25px;
+    background-color: #eeeeee;
+}
+.re_table > tbody > tr{
+    height: 40px;
+}
+.re_table > tbody > tr  > td > button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #c0d968;
+}
+.re_table > tbody > tr:nth-child(odd){
+    background-color: #eeeeee;
 }

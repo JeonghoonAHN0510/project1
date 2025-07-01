@@ -23,29 +23,35 @@ li{
     display: flex;
     width: 1280px;
     margin: 0 auto;
-    min-height: 750px;
+    min-height: 950px;
 }
 /*==========================본문 사이드바 CSS==========================*/
+
 .re_sidebar{
-    width: 180px;
+    width: 200px;
+}
+.re_sidebar > ul{
     text-align: center;
 }
-.re_sidebar h3{
+.re_sidebar > ul > li{
+    padding: 20px 10px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.re_sidebar_select{
     background-color: #c0d968;
-    padding: 15px 0px;
-}
-.re_sidebar li{
-    padding: 20px 0px;
-}
-.re_sidebar li:hover .re_sidebarAtag{
-    border-bottom: 1px solid gray;
+    border: 2px solid white;
 }
 /*==========================본문 내용 CSS==========================*/
 .re_content{
-    width: 1180px;
+    width: 1000px;
+    margin: 0 auto;
 }
 .re_content th{
-    padding: 30px 70px;
+    padding: 45px 70px;
+}
+.re_content > table{
+    width: 1000px;
+    height: 600px;
 }
 .re_btn1{
     width: 23px;
@@ -64,8 +70,12 @@ li{
     border: none;
     background-color: #c0d968;
     border-radius: 20px;
+    font-size: 15px;
 }
 .textarea{
     width: 350px;
     height: 80px;
+}
+.userName{
+    font-size: 20px;
 }

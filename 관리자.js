@@ -35,6 +35,7 @@ function logbutton() {
 
         if (adminObj.userEmail == userEmail && adminObj.userPwd == userPwd) {// 비밀번호 일치
             alert('로그인되었습니다');
+            location.href=`정유진.html`;
             return;
         }
     alert('로그인에 실패하였습니다');
