@@ -43,3 +43,7 @@
 .re_table > tbody > tr:nth-child(odd){
     background-color: #eeeeee;
 }
+/*---------------hover---------------*/
+.re_table > tbody > tr:hover{
+    background-color: #c0d968;
+}
