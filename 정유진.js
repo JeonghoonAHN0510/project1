@@ -1,3 +1,5 @@
+
+
 //================================localStorage에 rList 저장하기================================
 
 let pList = [
@@ -31,63 +33,61 @@ let rList = [
     { rcode: 15, userCode: 28, pcode: 15, rRequest: '', inDate: '2025-07-20', outDate: '2025-07-23', people: 6, rCondition: '예약완료' }
 ];
 function setrList(rList) {
-    localStorage.setItem('rList', JSON.stringify(rList));
+    localStorage.setItem('rList', JSON.stringify( rList ));
 }
 setrList(rList);
 
 function getrList(rList) {
     rList = localStorage.getItem( "rList" );
     if( rList == null ){
-        rList = [];
+        return rList = [];
     }else{
-        rList = JSON.parse( rList );
+        return rList = JSON.parse( rList );
     }
-    return rList;
 }
 function getpList(pList) {
     pList = localStorage.getItem( "pList" );
     if( pList == null ){
-        pList = [];
+        return pList = [];
     }else{
-        pList = JSON.parse( pList );
+        return pList = JSON.parse( pList );
     }
-    return pList;
 }
-// m_print();
-// function m_print() {
-//     console.log("m_ print exe");
-//     let m_tbody = document.querySelector(".m_tbody")
-//     console.log(m_tbody);
+m_print();
+function m_print() {
+    console.log("m_ print exe");
+    let m_tbody = document.querySelector(".m_tbody")
+    console.log(m_tbody);
 
-//     let pList = getpList();
-//     let rList = getrList();
+    let pList = getpList();
+    let rList = getrList();
 
-//     let html = "";
-//     for (let i = 0; i <= rList.length - 1; i++) {
-//         let reservation = rList[i];
-//         let pname = "";
-//         for (let j = 0; j <= pList.length - 1; j++) {
-//             if (pList[j].pcode === reservation.pcode) {
-//                 pname = pList[j].pname;
-//             }
-//         }
-//         html += `<tr>
-//                     <td>${pname}</td>
-//                     <td>${reservation.indate}</td>
-//                     <td>${reservation.outDate}</td>
-//                     <td>${reservation.rRequest}</td>
-//                     <td>${reservation.rCondition}</td>
-//                     <td>
-//                         <button onclick="m_removeBtn(${reservation.pcode})">삭제</button>
-//                     </td>
-//                 </tr>`
-//     }
-//     m_tbody.innerHTML = html;
-//     console.log(m_tbody);
-//     setList(rList);
-// }
+    let html = "";
+    for (let i = 0; i <= rList.length - 1; i++) {
+        let reservation = rList[i];
+        let pname = "";
+        for (let j = 0; j <= pList.length - 1; j++) {
+            if (pList[j].pcode === reservation.pcode) {
+                pname = pList[j].pname;
+            }
+        }
+        html += `<tr>
+                    <td>${pname}</td>
+                    <td>${reservation.indate}</td>
+                    <td>${reservation.outDate}</td>
+                    <td>${reservation.rRequest}</td>
+                    <td>${reservation.rCondition}</td>
+                    <td>
+                        <button onclick="m_removeBtn(${reservation.pcode})">삭제</button>
+                    </td>
+                </tr>`
+    }
+    m_tbody.innerHTML = html;
+    setList( rList );
+    console.log( m_tbody );
+}
 
-//———————수정함수———————//
+//--------------삭제함수--------------//
 function m_removeBtn(rcode) {
     console.log( "removeBtn exe" )
 

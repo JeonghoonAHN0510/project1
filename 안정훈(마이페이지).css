@@ -1,6 +1,6 @@
 .re_mypage{
     width: 1180px;
-    padding: 50px 150px;
+    padding: 50px 140px;
     text-align: center;
 }
 .myre{
@@ -9,5 +9,6 @@
 }
 .myhead th{
     font-size: 20px;
-    width: 100px;
+    width: 150px;
+    padding: 10px 0px;
 }
