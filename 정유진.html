@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정유진</title>
+    <link rel="stylesheet" href="./공통css.css">
     <link rel="stylesheet" href="정유진.css">
 
 </head>
+
 <body>
     <div id="wrap">
-        <div id="header"></div> <!--header-->
+
+        <div id="headerwrap">
+            <div id="header">
+                <div class="logo">
+                    <img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" />
+                </div>
+                <div class="logtopMenu">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">관리자</a>
+                </div>
+            </div>
+
         <div id="main">
             <div class="m_sidebar"> <!--사이드바 시작-->
                 <ul>
@@ -27,14 +42,14 @@
                             <th class="m_table_title" colspan="6">나의 예약</th>
                         </tr>
                     </thead>
-                        <tr>
-                            <th>객실종류</th>
-                            <th>입실일</th>
-                            <th>퇴실일</th>
-                            <th>요청사항</th>
-                            <th>예약상태</th>
-                            <th>관리</th>
-                        </tr>
+                    <tr>
+                        <th>객실종류</th>
+                        <th>입실일</th>
+                        <th>퇴실일</th>
+                        <th>요청사항</th>
+                        <th>예약상태</th>
+                        <th>관리</th>
+                    </tr>
                     <tbody class="m_tbody">
                         <tr>
                             <td>B룸</td>
@@ -70,7 +85,7 @@
                             <td>C룸</td>
                             <td>2025-06-17</td>
                             <td>2025-06-18</td>
-                            <td>난방 틀어주세요	</td>
+                            <td>난방 틀어주세요 </td>
                             <td>완료</td>
                             <td>
                                 <button onclick="m_removeBtn()">삭제</button>
@@ -83,15 +98,23 @@
                             <td>에어컨 틀어주세요</td>
                             <td>예약완료</td>
                             <td>
-                                <button onclick="m_removeBtn()">삭제</button>
+                                <button onclick="m_removeBtn(rcode)">삭제</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div> <!--리스트 끝-->
         </div>
-        <div id="footer"></div> <!--footer-->
+
+        <div id="footerwrap">
+            <div id="footer">
+                <p class="footerTop">스테이플랜</p><br />
+                숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+            </div>
+        </div>
+
     </div>
     <script src="정유진.js"></script>
 </body>
+
 </html>
