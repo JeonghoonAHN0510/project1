@@ -52,19 +52,20 @@ function logbutton() {
     const userPwd = loguserPwd.value;     console.log(userPwd);
 
     //3. 회원목록내 입력받은 값과 일치한 정보 찾기
-    /*let userList = localStorage.getItem('userList');
+    let userList = localStorage.getItem('userList');
     if (userList == null) {
         userList = [];
     } else {
         userList = JSON.parse(userList);
 
     }
-*/
+
     //5. 배열내 입력한 아이디와 비밀번호가 존재하면
     for (let i = 0; i <= userList.length-1; i++) {
         const user = userList[i]
         if (user.userEmail == userEmail && user.userPwd == userPwd) {// 비밀번호 일치
             alert('로그인되었습니다');
+            location.href = `안정훈(예약신청).html?usercode=${user.userCode}`
             return;
         }
     }

@@ -1,31 +1,5 @@
-// //================================localStorage에서 userList 가져오기================================
-// function getuserList() {
-//     let userList = localStorage.getItem('userList');
-//     if (userList == null) {
-//         userList = [];
-//     } else {
-//         userList = JSON.parse(userList);
-//     }
-//     return userList;
-// }
-// //================================localStorage에 userList 저장하기================================
-// function setuserList(userList) {
-//     localStorage.setItem('userList', JSON.stringify(userList));
-// }
-// //================================localStorage에서 rList 가져오기================================
-// function getrList() {
-//     let rList = localStorage.getItem('rList');
-//     if (rList == null) {
-//         rList = [];
-//     } else {
-//         rList = JSON.parse(rList);
-//     }
-//     return rList;
-// }
-// //================================localStorage에 rList 저장하기================================
-// function setList(rList) {
-//     localStorage.setItem('rList', rList);
-// }
+//================================localStorage에 rList 저장하기================================
+
 let pList = [
     { pcode: 1, pname: 'A룸', pmax: 2, pprice: 150000 },
     { pcode: 2, pname: 'B룸', pmax: 2, pprice: 200000 },
@@ -33,6 +7,12 @@ let pList = [
     { pcode: 4, pname: 'D룸', pmax: 4, pprice: 300000 },
     { pcode: 5, pname: 'E룸', pmax: 6, pprice: 400000 }
 ]
+
+function setpList(pList) {
+    localStorage.setItem('pList', JSON.stringify(pList) );
+}
+setpList(pList);
+
 let rList = [
     { rcode: 1, userCode: 3, pcode: 2, rRequest: '조용한 방 부탁드립니다', inDate: '2025-07-10', outDate: '2025-07-12', people: 2, rCondition: '예약완료' },
     { rcode: 2, userCode: 7, pcode: 5, rRequest: '아이와 함께 갑니다', inDate: '2025-07-14', outDate: '2025-07-15', people: 4, rCondition: '예약완료' },
@@ -50,45 +30,73 @@ let rList = [
     { rcode: 14, userCode: 9, pcode: 14, rRequest: '주차 가능 여부?', inDate: '2025-07-15', outDate: '2025-07-16', people: 5, rCondition: '예약완료' },
     { rcode: 15, userCode: 28, pcode: 15, rRequest: '', inDate: '2025-07-20', outDate: '2025-07-23', people: 6, rCondition: '예약완료' }
 ];
-
-
-
-m_print();
-function m_print() {
-    console.log("m_ print exe");
-    let m_tbody = document.querySelector(".m_tbody")
-    console.log( m_tbody );
-    let html = "";
-    for ( let i = 0; i <= rList.length-1; i++ ) {
-        let reservation = rList[i];
-        let pname = "";
-        for ( let j = 0; j <= pList.length-1; j++ ) {
-            if (pList[j].pcode === reservation.pcode) {
-                pname = pList[j].pname;
-            }
-        }
-        html += `<tr>
-                    <td>${pname}</td>
-                    <td>${reservation.indate}</td>
-                    <td>${reservation.outDate}</td>
-                    <td>${reservation.rRequest}</td>
-                    <td>${reservation.rCondition}</td>
-                    <td>
-                        <button onclick="m_removeBtn(${reservation.pcode})">삭제</button>
-                    </td>
-                </tr>`
-    }
-    m_tbody.innerHTML = html;
-    console.log( m_tbody );
+function setrList(rList) {
+    localStorage.setItem('rList', JSON.stringify(rList));
 }
+setrList(rList);
 
-//--------------수정함수--------------//
-function m_removeBtn( pcode ){
-    console.log( "removeBtn exe")
-    
-    for( let i = 0 ; i <= rList.length-1 ; i++ ){
-        if( rList[i].pcode == pcode ){
-            rList.splice(i,1);
+function getrList(rList) {
+    rList = localStorage.getItem( "rList" );
+    if( rList == null ){
+        rList = [];
+    }else{
+        rList = JSON.parse( rList );
+    }
+    return rList;
+}
+function getpList(pList) {
+    pList = localStorage.getItem( "pList" );
+    if( pList == null ){
+        pList = [];
+    }else{
+        pList = JSON.parse( pList );
+    }
+    return pList;
+}
+// m_print();
+// function m_print() {
+//     console.log("m_ print exe");
+//     let m_tbody = document.querySelector(".m_tbody")
+//     console.log(m_tbody);
+
+//     let pList = getpList();
+//     let rList = getrList();
+
+//     let html = "";
+//     for (let i = 0; i <= rList.length - 1; i++) {
+//         let reservation = rList[i];
+//         let pname = "";
+//         for (let j = 0; j <= pList.length - 1; j++) {
+//             if (pList[j].pcode === reservation.pcode) {
+//                 pname = pList[j].pname;
+//             }
+//         }
+//         html += `<tr>
+//                     <td>${pname}</td>
+//                     <td>${reservation.indate}</td>
+//                     <td>${reservation.outDate}</td>
+//                     <td>${reservation.rRequest}</td>
+//                     <td>${reservation.rCondition}</td>
+//                     <td>
+//                         <button onclick="m_removeBtn(${reservation.pcode})">삭제</button>
+//                     </td>
+//                 </tr>`
+//     }
+//     m_tbody.innerHTML = html;
+//     console.log(m_tbody);
+//     setList(rList);
+// }
+
+//———————수정함수———————//
+function m_removeBtn(rcode) {
+    console.log( "removeBtn exe" )
+
+    let rList = getrList();
+
+    for (let i = 0; i <= rList.length - 1; i++ ){
+        if (rList[i].rcode == rcode) {
+            rList.splice(i, 1);
+                setList(rList);
             alert("삭제가 완료되었습니다.")
             m_print();
             return;

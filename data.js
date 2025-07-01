@@ -1,17 +1,17 @@
-// //================================localStorage에서 userList 가져오기================================
-// function getuserList(){
-//     let userList = localStorage.getItem('userList');
-//     if( userList == null ){
-//         userList =[];
-//     }else {
-//         userList = JSON.parse( userList );
-//     }
-//     return userList;
-// }
-// //================================localStorage에 userList 저장하기================================
-// function setuserList(userList){
-//     localStorage.setItem('userList', JSON.stringify(userList));
-// }
+//================================localStorage에서 userList 가져오기================================
+function getuserList(){
+    let userList = localStorage.getItem('userList');
+    if( userList == null ){
+        userList =[];
+    }else {
+        userList = JSON.parse( userList );
+    }
+    return userList;
+}
+//================================localStorage에 userList 저장하기================================
+function setuserList(userList){
+    localStorage.setItem('userList', JSON.stringify(userList));
+}
 //================================localStorage에서 rList 가져오기================================
 // function getrList(){
 //     let rList = localStorage.getItem('rList');
@@ -22,10 +22,10 @@
 //     }
 //     return rList;
 // }
-// //================================localStorage에 rList 저장하기================================
-// function setrList(rList){
-//     localStorage.setItem('rList', JSON.stringify(rList) );
-// }
+//================================localStorage에 rList 저장하기================================
+function setrList(rList){
+    localStorage.setItem('rList', JSON.stringify(rList) );
+}
 let pList = [
     { pcode: 1, pname: 'A룸', pmax: 2, pprice: 150000 },
     { pcode: 2, pname: 'B룸', pmax: 2, pprice: 200000 },
@@ -99,3 +99,6 @@ let rList = [
   { rcode: 14, userCode: 9, pcode: 14, rRequest: '주차 가능 여부?', inDate: '2025-07-15', outDate: '2025-07-16', people: 5, rCondition: '예약완료' },
   { rcode: 15, userCode: 28, pcode: 15, rRequest: '', inDate: '2025-07-20', outDate: '2025-07-23', people: 6, rCondition: '예약완료' }
 ];
+
+setuserList(userList);
+setrList(rList);

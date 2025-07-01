@@ -50,7 +50,7 @@ function getPname(pcode){
 function updateBtn(rcode){
     let userCode = new URLSearchParams(location.search).get( 'usercode' );
     console.log( userCode );
-    location.href = `update.html?usercode=${userCode}&rcode=${rcode}`;
+    location.href = `안정훈(예약수정).html?usercode=${userCode}&rcode=${rcode}`;
 }       // usercode 수정 필요
 //================================삭제 버튼 함수================================
 // 실행조건 : 삭제 버튼이 onclick 됐을 
@@ -68,3 +68,21 @@ function deleteBtn(rcode){
         }
     }
 };
+//================================고객 이름 출력 함수================================
+namePrint()
+function namePrint(){
+    let userCode = new URLSearchParams(location.search).get('usercode');
+    console.log( userCode );
+    let userList = getuserList();
+    // 어디에 .logtopMenu에
+    let logtop = document.querySelector('.logtopMenu');
+    let html = ``;
+    for ( let i = 0; i < userList.length; i++){
+        let user = userList[i];
+        if ( user.userCode == userCode ){
+            html = `${user.userName}님 환영합니다!`
+            logtop.innerHTML = html;
+            return;
+        }
+    }
+}
