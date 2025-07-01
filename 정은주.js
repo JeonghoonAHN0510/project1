@@ -33,10 +33,11 @@ let userList = [
 //================================localStorage에 userList 저장하기================================
 
 
-/*function setuserList(userList) {
+function setuserList(userList) {
     localStorage.setItem('userList', JSON.stringify(userList));
 }
-*/
+
+setuserList(userList);
 
 /*function setuserList(){
     let userList = localStorage.getItem('userList');

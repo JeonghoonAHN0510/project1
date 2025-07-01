@@ -3,10 +3,11 @@ let adminObj =
 //================================localStorage에 userList 저장하기================================
 
 
-/*function setuserList(userList) {
-    localStorage.setItem('userList', JSON.stringify(userList));
+function setuserList(adminObj) {
+    localStorage.setItem('adminObj', JSON.stringify(adminObj));
 }
-*/
+
+setuserList(adminObj);
 
 /*function setuserList(){
     let userList = localStorage.getItem('userList');
