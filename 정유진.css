@@ -1,6 +1,6 @@
-/* *{
+*{
     border: 1px solid red;
-} */
+}
 a{
     color: black;
     text-decoration: none;
@@ -62,4 +62,12 @@ li{
 }
 .m_table > tbody > tr:nth-child(odd){
     background-color: #eeeeee;
+}
+
+
+
+
+/*---------------hover---------------*/
+.m_table > tbody > tr:hover{
+    background-color: #c0d968;
 }
