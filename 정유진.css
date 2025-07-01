@@ -1,15 +1,6 @@
-@font-face {
-     font-family: 'S-CoreDream-3Light';
-     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* *{
     border: 1px solid red;
-}
+} */
 a{
     color: black;
     text-decoration: none;
@@ -17,13 +8,9 @@ a{
 li{
     list-style: none;
 }
-#header, #footer{
-    width: 1280px;
-    height: 200px;
-    margin: 0 auto;
-}
 
 #main{
+    background-color: white;
     display: flex;
     width: 1280px;
     margin: 0 auto;
@@ -36,6 +23,7 @@ li{
 }
 .m_sidebar > ul > li{
     padding: 20px 10px;
+    border-bottom: 1px solid #c1c1c1;
 }
 .m_sidebar_select{
     background-color: #c0d968;
@@ -47,7 +35,8 @@ li{
 }
 .m_table{
     width: 950px;
-    margin: 0px 20px;
+    height: 400px;
+    margin: 30px 20px;
     border: 1px solid black;
     text-align: center;
 }
@@ -67,4 +56,7 @@ li{
     padding: 5px 10px;
     border-radius: 10px;
     background-color: #c0d968;
+}
+.m_table > tbody > tr:nth-child(odd){
+    background-color: #eeeeee;
 }
