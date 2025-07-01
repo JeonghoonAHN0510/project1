@@ -11,7 +11,7 @@ function mypagePrint(){
     // 어디에? .mypage_table에
     let table = document.querySelector('.mypage_table');
     // rList를 가져오고
-    // let rList = getrList()
+    let rList = getrList()
     // 로그인한 userCode를 가져와서
     let userCode = new URLSearchParams(location.search).get( 'usercode' );
     console.log( userCode );
@@ -56,12 +56,12 @@ function updateBtn(rcode){
 // 실행조건 : 삭제 버튼이 onclick 됐을 
 function deleteBtn(rcode){
     console.log('deleteBtn 실행');
-    // let rList = getrList();
+    let rList = getrList();
     for ( let i = 0; i < rList.length; i++){
         let reservation = rList[i];
         if ( reservation.rcode == rcode ){
             rList.splice(i, 1);
-            // setrList(rList);
+            setrList(rList);
             mypagePrint();
             alert('예약 삭제 성공')
             return;
@@ -85,4 +85,10 @@ function namePrint(){
             return;
         }
     }
+}
+//================================마이페이지 이동 함수================================
+function transMypage(){
+    let userCode = new URLSearchParams(location.search).get('usercode');
+    console.log( userCode );
+    location.href = `안정훈(마이페이지).html?usercode=${userCode}`;
 }

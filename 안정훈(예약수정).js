@@ -8,7 +8,7 @@ function updatePrint(){
     const url = new URLSearchParams(location.search);
     const getRcode = url.get('rcode');
     console.log( getRcode );
-    // let rList = getrList();
+    let rList = getrList();
     for ( let i = 0; i < rList.length; i++){
         const obj = rList[i];
         if ( obj.rcode == getRcode ){
@@ -27,7 +27,7 @@ function updateBtn2(){
     const url = new URLSearchParams(location.search);
     const getrcode = url.get('rcode');
     console.log( getrcode );
-    // let rList = getrList();
+    let rList = getrList();
     for ( let i = 0; i < rList.length; i++){
         let reservation = rList[i];
         if ( reservation.rcode == getrcode ){
@@ -37,8 +37,8 @@ function updateBtn2(){
             reservation.people = document.querySelector('.re_btnValue').innerHTML;
             reservation.rRequest = document.querySelector('.textarea').value;
             console.log( reservation );
-            // setrList(rList);
-            location.href = `mypage.html?usercode=${reservation.userCode}`
+            setrList(rList);
+            location.href = `안정훈(마이페이지).html?usercode=${reservation.userCode}`
             mypagePrint();
             alert('수정 완료');
         }

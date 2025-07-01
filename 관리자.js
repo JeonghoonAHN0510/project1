@@ -23,14 +23,14 @@ function logbutton() {
     const userPwd = loguserPwd.value;     console.log(userPwd);
 
     //3. 회원목록내 입력받은 값과 일치한 정보 찾기
-    /*let userList = localStorage.getItem('userList');
+    let userList = localStorage.getItem('userList');
     if (userList == null) {
         userList = [];
     } else {
         userList = JSON.parse(userList);
 
     }
-*/
+
     //5. 배열내 입력한 아이디와 비밀번호가 존재하면
 
         if (adminObj.userEmail == userEmail && adminObj.userPwd == userPwd) {// 비밀번호 일치

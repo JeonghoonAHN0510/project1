@@ -83,7 +83,7 @@ function reservationBtn(){
     const url = new URLSearchParams(location.search);
     const getUsercode = url.get('usercode');
     // 가져온 입력값을 객체화 해서
-    // let rList = getrList();
+    let rList = getrList();
     let rcode = rList.length == 0 ? 1 : rList[rList.length - 1].rcode + 1;
     let obj = {
         rcode,
@@ -99,6 +99,8 @@ function reservationBtn(){
     rList.push( obj );
     // localStorage의 rList에 저장하기
     setrList(rList);
+
+    location.href = `안정훈(마이페이지).html?usercode=${getUsercode}`
 }
 //================================고객 이름 출력 함수================================
 namePrint()
@@ -117,4 +119,10 @@ function namePrint(){
             return;
         }
     }
+}
+//================================마이페이지 이동 함수================================
+function transMypage(){
+    let userCode = new URLSearchParams(location.search).get('usercode');
+    console.log( userCode );
+    location.href = `안정훈(마이페이지).html?usercode=${userCode}`;
 }
