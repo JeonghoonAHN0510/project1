@@ -92,3 +92,8 @@ function transMypage(){
     console.log( userCode );
     location.href = `안정훈(마이페이지).html?usercode=${userCode}`;
 }
+//================================예약신청 이동 함수================================
+function transReser(){
+    let userCode = new URLSearchParams(location.search).get('usercode');
+    location.href = `안정훈(예약신청).html?usercode=${userCode}`;
+}
