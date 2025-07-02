@@ -41,3 +41,15 @@ function logbutton() {
     alert('로그인에 실패하였습니다');
 }
 
+function pwdPrint(){
+    console.log('11111');
+    let pwd = document.querySelector('#loguserPwd');
+    let img = document.querySelector('.imgpwd');
+    if ( pwd.type == 'text' ){
+        pwd.type = "password";
+        img.src = "KakaoTalk_20250702_172831311.png";
+    }else {
+        pwd.type = "text";
+        img.src = "KakaoTalk_20250702_173318028.png";
+    }
+}
