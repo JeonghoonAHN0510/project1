@@ -1,0 +1,14 @@
+
+*{
+    border: 1px solid red;
+}
+.m_map{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.m_map > p{
+    margin-top: 30px;
+}
