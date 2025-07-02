@@ -32,30 +32,37 @@
                     <li><a href="#">재고관리</a></li>
                 </ul>
             </div> <!--사이드바 끝-->
-            <div class="m_table_div"> <!--리스트 시작-->
-                <table class="m_table">
-                    <thead>
-                        <tr>
-                            <th class="m_table_title" colspan="10">나의 예약</th>
-                        </tr>
-                        <tr>
-                            <th>예약번호</th>
-                            <th>성함</th>
-                            <th>연락처</th>
-                            <th>객실종류</th>
-                            <th>입실일</th>
-                            <th>퇴실일</th>
-                            <th>요청사항</th>
-                            <th>상태</th>
-                            <th>관리</th>
-                        </tr>
-                    </thead>
+            <div class="bar_wrap">
+                <div class="searchbar">
+                    <input class="sear_name" type="text" placeholder="성함을 입력하세요">
+                    <button onclick="m_searchBtn()">검색</button>
+                </div>
+            
+                <div class="m_table_div"> <!--리스트 시작-->
+                    <table class="m_table">
+                        <thead>
+                            <tr>
+                                <th class="m_table_title" colspan="10">나의 예약</th>
+                            </tr>
+                            <tr>
+                                <th>예약번호</th>
+                                <th>성함</th>
+                                <th>연락처</th>
+                                <th>객실종류</th>
+                                <th>입실일</th>
+                                <th>퇴실일</th>
+                                <th>요청사항</th>
+                                <th>상태</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
 
-                    <tbody class="m_tbody">
+                        <tbody class="m_tbody">
 
-                    </tbody>
-                </table>
-            </div> <!--리스트 끝-->
+                        </tbody>
+                    </table>
+                </div> <!--리스트 끝-->
+            </div>
         </div>
 
         <div id="footerwrap">
