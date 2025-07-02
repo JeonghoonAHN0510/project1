@@ -31,11 +31,23 @@ let userList = [
   { userCode: 30, userName: '제시', userNum: '01005050505', userEmail: 'jessie@example.com', userPwd: 'strongpw' }
 ];
 
-// ===== localStorage 관리하는 함수 ======
-function setuserList(userList) {
-    localStorage.setItem('userList', JSON.stringify(userList));
+// ===== 1. localStorage 관리하는 함수 ======
+function setLocalStorage(userList) {
+    localStorage.setItem('userList', JSON.stringify(userList));//문자열만 저장할수있기 때문에 JSON문자열로 변환
     console.log(userList);
 }
 
-setuserList(userList);
+// ===== 2. 회원가입 함수 =====
+function signupBotton(){ console.log('--> signupBotton exe')}
+  // (1) 입력 마크업 객체가져오기 
+  const signup_name = document.querySelector('#signup_name'); console.log( signup_name);
+  const signup_phone = document.querySelector('#signup_phone');
+  const signup_email = document.querySelector('#signup_email');
+  const signup_pwd = document.querySelector('#signup_pwd');
+  const confirmPassword = document.querySelector('#confirmPassword');
+  // (2) 입력마크업 객체내 입력값 가져오기
+  
+  // (3) 객체화
+  // (4) 배열저장
+
 
