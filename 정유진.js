@@ -217,3 +217,8 @@ function m_removeBtn(rcode) {
 }
 
 //----------------이동-----------------//
+
+function managerLogout(){
+    location.href = '관리자.html'
+    alert('로그아웃 성공!')
+}

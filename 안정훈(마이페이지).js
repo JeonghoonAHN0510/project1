@@ -97,3 +97,8 @@ function transReser(){
     let userCode = new URLSearchParams(location.search).get('usercode');
     location.href = `안정훈(예약신청).html?usercode=${userCode}`;
 }
+//================================로그아웃 함수================================
+function logout(){
+    location.href = '정은주.html'
+    alert('로그아웃 성공!')
+}
