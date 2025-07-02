@@ -45,7 +45,7 @@
 .logtopMenu a {
     margin-left: 50px;
     text-decoration: none;
-    color: #5a5a89;
+    color: black;
     font-weight: 500;
     font-size: 18px;
 }
@@ -88,7 +88,7 @@
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer ; //마우스 오버시 포인터변경
+    cursor: pointer ;
     margin-bottom: 20px;
 }
 		
