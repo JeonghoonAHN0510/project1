@@ -38,7 +38,7 @@ function setLocalStorage(userList) {
 }
 
 // ===== 2. 회원가입 함수 =====
-function signupBotton(){ console.log('--> signupBotton exe')}
+function signupBotton(){ console.log('--> signupBotton exe')
   // (1) 입력 마크업 객체가져오기 
   const signup_name = document.querySelector('#signup_name'); console.log( signup_name);
   const signup_phone = document.querySelector('#signup_phone');
@@ -57,12 +57,12 @@ function signupBotton(){ console.log('--> signupBotton exe')}
   // 입력한 값이 없으면 회원가입 실패
   if( userName =='' || userNum =='' || userEmail =='' || userPwd =='' || confirmPwd ==''){
       alert( '비어있는 항목이 있습니다.[회원가입 실패]');
-      
+      return;
      }
-  // 비밀전호 일치 여부 체크
+  // 비밀번호 일치 여부 체크
   if (userPwd !== confirmPwd) {
         alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.');
-        
+        return;
     }
   // 이용약관 동의 여부 체크   
 
@@ -75,7 +75,7 @@ function signupBotton(){ console.log('--> signupBotton exe')}
   let userCode = 1 // 회원번호 초기값
     // ===== localStorage에서 userList 가져오기 =====
     // 1) localStorage에서 userList 가져오기
-    let signupList = localStorage.getItem('userList');
+    let userList = localStorage.getItem('userList');
     // 2) 존재하지 않으면 (배열) 새로 생성, 존재하면 타입변환
     if ( userList == null ){
         userList = [ ];
@@ -95,13 +95,14 @@ function signupBotton(){ console.log('--> signupBotton exe')}
   let jsonData = JSON.stringify( userList);
   localStorage.setItem( 'userList' , jsonData );
 
-  userNameInput.value ='';
-  userNumInput.value = '';
-  userEmailInput.value = '';
-  userPwdInput.value = '';
-  confirmPwdInput.value = '';
+  signup_name.value ='';
+  signup_phone.value = '';
+  signup_email.value = '';
+  signup_pwd.value = '';
+  confirmPassword.value = '';
   alert ('회원 가입 성공') ;
-
+  location.href = '정은주.html'
+    }
 
 
 
