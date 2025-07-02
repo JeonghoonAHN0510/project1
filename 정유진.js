@@ -227,6 +227,7 @@ function m_removeBtn(rcode) {
 function managerLogout(){
     location.href = '관리자.html'
     alert('로그아웃 성공!')
+}
 //----------------검색-----------------//
 function m_searchBtn() {
     console.log("searchBox exe");
