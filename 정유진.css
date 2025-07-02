@@ -73,6 +73,30 @@ li{
     background-color: #c0d968;
 }
 
+
+/*---------------searchbox---------------*/
+.searchbar{
+    display: flex;
+    background-color: #eeeeee;
+    padding: 20px;
+    width: 950px;
+    margin: 30px auto;
+    justify-content: center;
+    
+}
+.searchbar > input{
+    width: 300px;
+    margin: 0px 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.searchbar > button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 8px;
+}
+
 .logoutBtn{
     background-color: #c0d968;
     margin-left: 10px;
