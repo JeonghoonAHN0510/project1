@@ -41,7 +41,7 @@
 .logtopMenu a {
     margin-left: 50px;
     text-decoration: none;
-    color: #5a5a89;
+    color: black;
     font-weight: 500;
     font-size: 18px;
 }
@@ -106,4 +106,20 @@
 
 .footerTop {
     margin-right: 269px;
+}
+.stock button{
+    margin-right: 5px;
+}
+.pwdBox{
+    position: relative;
+}
+.imgpwd{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+#loguserPwd{
+    width: 350px;
 }
