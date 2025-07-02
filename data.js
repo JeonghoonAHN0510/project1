@@ -103,5 +103,5 @@ let rList = [
 
 
 
-setuserList(userList);
+
 setrList(rList);
