@@ -173,6 +173,11 @@ function translocation(){
     console.log( userCode );
     location.href = `정유진4.html?usercode=${userCode}`;
 }
+function transInfo(){
+    let userCode = new URLSearchParams(location.search).get('usercode');
+    console.log( userCode );
+    location.href = `정유진5.html?usercode=${userCode}`;
+}
 //================================로그아웃 함수================================
 function logout(){
     location.href = '정은주.html'
