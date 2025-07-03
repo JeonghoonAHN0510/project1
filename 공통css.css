@@ -171,3 +171,8 @@ button{
 .s_plusBtn:active{
     transform: translateY(1px);
 }
+.stock input{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
