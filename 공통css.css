@@ -172,7 +172,14 @@ button{
     transform: translateY(1px);
 }
 .stock input{
-    width: 100px;
+    width: 70px;
     border-radius: 5px;
     text-align: center;
+}
+.noteInput1 {
+    width: 120px;
+}
+.searchbar button{
+    width: 60px;
+    border-radius: 10px;
 }
