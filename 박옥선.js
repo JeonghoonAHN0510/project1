@@ -65,10 +65,27 @@ function signupBotton(){ console.log('--> signupBotton exe')
         return;
     }
   // 이용약관 동의 여부 체크   
+  let check = document.querySelector('#termsAgreement').checked; console.log(check);
+  if( !check ){
+    console.log( "a");
+    alert ("동의여부 체크해 주세요")
+    return;
+  }
 
-  // 이메일 중복 확인
+//   // 이메일 중복 확인
+// for( let i = 0 ; i <= userList.length - 1 ; i++ ){
+//     if(userList[i].userEmail == userEmail){
+//       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
+//       return;
+//     }
+}
 
   // 전화번호 중복 확인
+  for( let i = 0 ; i <= userList.length - 1 ; i++ ){
+//     if(userList[i].userEmail == userEmail){
+//       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
+//       return;
+
 
 
   // (3) 객체화
