@@ -13,6 +13,11 @@
 }
 a{
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
 }
 button{
     cursor: pointer;
@@ -127,4 +132,42 @@ button{
 }
 #loguserPwd{
     width: 350px;
+}
+
+.m_map{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.m_map > p{
+    margin-top: 30px;
+}
+.s_plusBtn{
+    width: 80px;
+    margin: 0% auto;
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #c0d968;
+    color: black;
+    font-size: 15px;
+    margin-left: 700px;
+    position: absolute;
+    top: 15px;
+    box-shadow: 1px 1px 1px gray;    
+}
+
+
+.logoutBtn{
+    background-color: #c0d968;
+    margin-left: 10px;
+    padding: 2px;
+    width: 80px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px gray;
+}
+.s_plusBtn:active{
+    transform: translateY(1px);
 }

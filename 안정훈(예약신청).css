@@ -79,3 +79,15 @@ li{
 .userName{
     font-size: 20px;
 }
+.userName{
+    width: 1000px;
+    text-align: right;
+}
+.logoutBtn{
+    background-color: #c0d968;
+    margin-left: 10px;
+    padding: 2px;
+    width: 80px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px gray;
+}

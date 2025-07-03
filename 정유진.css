@@ -34,7 +34,7 @@ li{
     border: 2px solid white;
 }
 .m_table_div{
-    width: 1000px;
+    width: 990px;
     margin: 0 auto;
 }
 .m_table{
@@ -52,6 +52,7 @@ li{
     padding-left: 25px;
     font-size: 25px;
     background-color: #eeeeee;
+    position: relative;
 }
 .m_table > tbody > tr{
     height: 40px;
