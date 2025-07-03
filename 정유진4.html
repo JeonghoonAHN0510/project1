@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>StayPlan</title>
+    <link rel="shortcut icon" href="stayplan logo.png">
+    <link rel='stylesheet' href='안정훈(마이페이지).css'>
+    <link rel='stylesheet' href='안정훈(예약신청).css'>
+    <link rel='stylesheet' href='공통css.css'>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="headerwrap">
+            <div id="header">
+                <div class="logo">
+                    <a href="정유진2.html"><img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" /></a>
+                </div>
+                <div class="userName">
+
+                </div>
+                <div>
+                    <button class="logoutBtn" onclick="logout()">로그아웃</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="container">        <!-- 본문 시작 -->
+            <div class="re_sidebar"><!-- 본문 사이드바 -->
+                <ul>
+                    <li class="re_sidebar_select">예약하기</li>
+                    <li><a class="re_sidebarAtag" onclick="transMypage()">마이페이지</a></li>
+                    <li><a class="re_sidebarAtag" onclick="transReser()">예약하기</a></li>
+                    <li><a class="re_sidebarAtag" href="">객실정보</a></li>
+                    <li><a class="re_sidebarAtag" onclick="translocation()">숙소위치</a></li>
+                </ul>
+            </div>                  <!-- 본문 사이드바 끝 -->
+            <div class="re_mypage m_map"><!-- 본문 내용 시작-->
+                <img src="./ba2188bf-bc14-4f77-a6cd-7a7d45178d07-1750311347351.png">
+                <p>숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+            </div>                  <!-- 본문 내용 끝 -->
+        </div>                      <!-- 본문 끝 -->
+
+        <div id="footerwrap">
+            <div id="footer">
+                <p class="footerTop">스테이플랜</p><br />
+                숙소 위치 : 강원특별자치도 강릉시 창해로 514 (안현동)</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="data.js"></script>
+    <script src='정유진3.js'></script>
+
+</body>
+
+</html>
