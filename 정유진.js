@@ -244,6 +244,13 @@ function m_searchBtn() {
         // 유저 찾기
         //화살표 함수 표기법 array.find((element, index, array) => { ... });
         let user = userList.find(u => u.userCode === reservation.userCode);
+        // let user2 = []
+        // for( let j = 0 ; j <= userList.length-1 ; j++ ){
+        //     let u = userList[ j ]
+        //     if( u.usercode == reservation.userCode ){
+        //         user2.push( u )
+        //     }
+        // }
         if (!user || user.userName !== sear_name) continue;
 
         // 방 찾기
