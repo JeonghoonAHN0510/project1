@@ -28,10 +28,13 @@
                     <div class="logo">
                         <a href="정유진2.html"><img src="KakaoTalk_20250627_181003323.png" alt="StayPlan 로고" /></a>
                     </div>
-                    <div class="logtopMenu">
+                    <div class="userName">
                         <a href="정은주.html">로그인</a>
                         <a href="박옥선.html">회원가입</a>
                         <a href="관리자.html">관리자</a>
+                    </div>
+                    <div>
+                        <button class="logoutBtn" onclick="logout()">로그아웃</button>
                     </div>
                 </div>
             </div>
@@ -41,9 +44,9 @@
                     <ul>
                         <li class="re_sidebar_select">예약하기</li>
                         <li><a class="re_sidebarAtag" onclick="transMypage()">마이페이지</a></li>
-                        <li><a class="re_sidebarAtag" href="">예약하기</a></li>
-                        <li><a class="re_sidebarAtag" href="">객실정보</a></li>
-                        <li><a class="re_sidebarAtag" href="">숙소위치</a></li>
+                        <li><a class="re_sidebarAtag" onclick="transReser()">예약하기</a></li>
+                        <li><a class="re_sidebarAtag" onclick="transInfo()">객실정보</a></li>
+                        <li><a class="re_sidebarAtag" onclick="translocation()">숙소위치</a></li>
                     </ul>
                 </div>
                 <ul>
@@ -114,10 +117,11 @@
             </div>
 
         </div>
+        <script src="data.js"></script>
+        <script src="정유진5.js"></script>
     </body>
 
-    </html>
-</body>
+    <html>
 
-</html>
-<!--수정-->
+    </html>
+    <!--수정-->
