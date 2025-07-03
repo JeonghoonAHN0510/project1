@@ -33,19 +33,31 @@ let userList = [
 
 // ===== 1. localStorage 관리하는 함수 ======
 function setLocalStorage(userList) {
-    localStorage.setItem('userList', JSON.stringify(userList));//문자열만 저장할수있기 때문에 JSON문자열로 변환
-    console.log(userList);
+  localStorage.setItem('userList', JSON.stringify(userList));//문자열만 저장할수있기 때문에 JSON문자열로 변환
+  console.log(userList);
 }
 
 // ===== 2. 회원가입 함수 =====
-function signupBotton(){ console.log('--> signupBotton exe')
+function signupBotton() {
+  console.log('--> signupBotton exe')
+  let userCode = 1 // 회원번호 초기값
+  // ===== localStorage에서 userList 가져오기 =====
+  // 1) localStorage에서 userList 가져오기
+  let userList = localStorage.getItem('userList');
+  // 2) 존재하지 않으면 (배열) 새로 생성, 존재하면 타입변환
+  if (userList == null) {
+    userList = [];
+  } else {
+    userList = JSON.parse(userList);
+    userCode = userList[userList.length - 1].userCode + 1;
+  }
   // (1) 입력 마크업 객체가져오기 
-  const signup_name = document.querySelector('#signup_name'); console.log( signup_name);
+  const signup_name = document.querySelector('#signup_name'); console.log(signup_name);
   const signup_phone = document.querySelector('#signup_phone');
   const signup_email = document.querySelector('#signup_email');
   const signup_pwd = document.querySelector('#signup_pwd');
   const confirmPassword = document.querySelector('#confirmPassword');
-  
+
   // (2) 입력마크업 객체내 입력값 가져오기
   const userName = signup_name.value; console.log(userName);
   const userNum = signup_phone.value; console.log(userNum);
@@ -55,71 +67,63 @@ function signupBotton(){ console.log('--> signupBotton exe')
 
   //==== 유효성 검사 ======  
   // 입력한 값이 없으면 회원가입 실패
-  if( userName =='' || userNum =='' || userEmail =='' || userPwd =='' || confirmPwd ==''){
-      alert( '비어있는 항목이 있습니다.[회원가입 실패]');
-      return;
-     }
+  if (userName == '' || userNum == '' || userEmail == '' || userPwd == '' || confirmPwd == '') {
+    alert('비어있는 항목이 있습니다.[회원가입 실패]');
+    return;
+  }
   // 비밀번호 일치 여부 체크
   if (userPwd !== confirmPwd) {
-        alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.');
-        return;
-    }
+    alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.');
+    return;
+  }
   // 이용약관 동의 여부 체크   
   let check = document.querySelector('#termsAgreement').checked; console.log(check);
-  if( !check ){
-    console.log( "a");
-    alert ("동의여부 체크해 주세요")
+  if (!check) {
+    console.log("a");
+    alert("동의여부 체크해 주세요")
     return;
   }
 
-//   // 이메일 중복 확인
-// for( let i = 0 ; i <= userList.length - 1 ; i++ ){
-//     if(userList[i].userEmail == userEmail){
-//       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
-//       return;
-//     }
+  // 이메일 중복 확인
+  for (let i = 0; i <= userList.length - 1; i++) {
+    if (userList[i].userEmail == userEmail) {
+      alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
+      return;
+    }
+  }
 }
-
-  // 전화번호 중복 확인
-  for( let i = 0 ; i <= userList.length - 1 ; i++ ){
-//     if(userList[i].userEmail == userEmail){
-//       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
-//       return;
+// 전화번호 중복 확인
+for (let i = 0; i <= userList.length - 1; i++) {
+  //     if(userList[i].userEmail == userEmail){
+  //       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
+  //       return;
 
 
 
   // (3) 객체화
-  let userCode = 1 // 회원번호 초기값
-    // ===== localStorage에서 userList 가져오기 =====
-    // 1) localStorage에서 userList 가져오기
-    let userList = localStorage.getItem('userList');
-    // 2) 존재하지 않으면 (배열) 새로 생성, 존재하면 타입변환
-    if ( userList == null ){
-        userList = [ ];
-    }else{ 
-        userList = JSON.parse( userList );
-        userCode = userList[ userList.length -1 ].userCode + 1;
-    }
-    const obj = { userCode : userCode , userName : userName , userNum : userNum , 
-      userEmail : userEmail , userPwd : userPwd , confirmPwd : confirmPassword }; console.log( obj );
 
-    
+  const obj = {
+    userCode: userCode, userName: userName, userNum: userNum,
+    userEmail: userEmail, userPwd: userPwd, confirmPwd: confirmPassword
+  }; console.log(obj);
+
+
 
   // (4) 배열저장
-  userList.push(obj) ; console.log( userList );
-  
-  // 변경된 userList를 localStorage에 다시 저장
-  let jsonData = JSON.stringify( userList);
-  localStorage.setItem( 'userList' , jsonData );
+  userList.push(obj); console.log(userList);
 
-  signup_name.value ='';
+  // 변경된 userList를 localStorage에 다시 저장
+  let jsonData = JSON.stringify(userList);
+  localStorage.setItem('userList', jsonData);
+
+  signup_name.value = '';
   signup_phone.value = '';
   signup_email.value = '';
   signup_pwd.value = '';
   confirmPassword.value = '';
-  alert ('회원 가입 성공') ;
+  alert('회원 가입 성공');
   location.href = '정은주.html'
-    }
+}
 
 
 
