@@ -26,14 +26,16 @@
 
 
         <div id="logmain">
-            <h2>로그인</h2>
-            <div class="login">
-                <input id="loguserEmail" type="email" placeholder="이메일" required />
-                <div class="pwdBox">
-                    <input id="loguserPwd" type="password" placeholder="비밀번호" required />
-                    <img class="imgpwd" src="KakaoTalk_20250702_172831311.png" onclick="pwdPrint()">
+            <div class="loginbox">
+                <h2>로그인</h2>
+                <div class="login">
+                    <input id="loguserEmail" type="email" placeholder="이메일" required />
+                    <div class="pwdBox">
+                        <input id="loguserPwd" type="password" placeholder="비밀번호" required />
+                        <img class="imgpwd" src="KakaoTalk_20250702_172831311.png" onclick="pwdPrint()">
+                    </div>
+                    <button onclick="logbutton()" class="btnlog">로그인</button>
                 </div>
-                <button onclick="logbutton()" class="btnlog">로그인</button>
             </div>
         </div>
 

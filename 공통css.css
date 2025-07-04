@@ -72,13 +72,22 @@ button{
     margin-bottom: 40px;
 }
 
+.loginbox{
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 50px;
+
+}
+
 .login {
     width: 100%;
     max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+
 }
+
 
 .login input {
     padding: 20px;
@@ -89,7 +98,7 @@ button{
 }
 
 .login button {
-    width: 30%;
+    width: 40%;
     margin: 0% auto;
     padding: 5px;
     border: none;
