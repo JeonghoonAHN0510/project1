@@ -91,12 +91,12 @@ function signupBotton() {
       alert(" 중복된 이메일입니다. 다른 이메일을 입력하세요. ")
       return;
     }
-    if (userList[i].userNum == userNum) {
+    if (userList[i].userNum == userNum) {  // 전화번호 중복 확인
       alert(" 중복된 전화번호입니다. 다른 전화번호를 입력하세요. ")
       return;
     }
   }
-  // 전화번호 중복 확인
+ 
 
 
 
