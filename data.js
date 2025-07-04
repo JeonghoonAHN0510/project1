@@ -100,7 +100,6 @@ let pList = [
 // ];
 
 // let rList = [
-//   // 기존 1~29번은 그대로 유지
 //   { rcode: 1, userCode: 25, pcode: 2, rRequest: '', inDate: '2025-04-15', outDate: '2025-04-16', people: 2, rCondition: '취소' },
 //   { rcode: 2, userCode: 30, pcode: 7, rRequest: '', inDate: '2025-04-20', outDate: '2025-04-21', people: 2, rCondition: '퇴실완료' },
 //   { rcode: 3, userCode: 5, pcode: 11, rRequest: '', inDate: '2025-05-01', outDate: '2025-05-03', people: 3, rCondition: '퇴실완료' },
@@ -130,8 +129,6 @@ let pList = [
 //   { rcode: 27, userCode: 1, pcode: 8, rRequest: '', inDate: '2025-07-18', outDate: '2025-07-19', people: 2, rCondition: '예약완료' },
 //   { rcode: 28, userCode: 10, pcode: 9, rRequest: '뷰 좋은 방', inDate: '2025-07-20', outDate: '2025-07-22', people: 5, rCondition: '예약완료' },
 //   { rcode: 29, userCode: 28, pcode: 15, rRequest: '', inDate: '2025-07-20', outDate: '2025-07-23', people: 6, rCondition: '예약완료' },
-
-//   // 추가된 예약
 //   { rcode: 30, userCode: 1, pcode: 6, rRequest: '재방문입니다', inDate: '2025-04-05', outDate: '2025-04-07', people: 2, rCondition: '퇴실완료' },
 //   { rcode: 31, userCode: 1, pcode: 7, rRequest: '', inDate: '2025-05-10', outDate: '2025-05-11', people: 1, rCondition: '취소' },
 //   { rcode: 32, userCode: 3, pcode: 9, rRequest: '', inDate: '2025-06-15', outDate: '2025-06-16', people: 1, rCondition: '퇴실완료' },
@@ -161,15 +158,7 @@ let pList = [
 //     { productId: 9, category: '객실용품', productName: '헤어드라이어', stockIn: 50, stockUsed: 10, minStockLevel: 5, notes: '예약실 전용 비치' },
 //     { productId: 10, category: '미니바', productName: '생수 500ml', stockIn: 1000, stockUsed: 600, minStockLevel: 150, notes: '하루 2병 제공' },
 //     { productId: 11, category: '미니바', productName: '콜라 캔', stockIn: 300, stockUsed: 220, minStockLevel: 50, notes: '냉장 필수' },
-//     { productId: 12, category: '미니바', productName: '오렌지주스', stockIn: 250, stockUsed: 200, minStockLevel: 40, notes: '유통기한 확인 필요' },
-//     { productId: 13, category: '욕실용품', productName: '면도기', stockIn: 200, stockUsed: 150, minStockLevel: 30, notes: '1회용 개별포장' },
-//     { productId: 14, category: '욕실용품', productName: '샤워캡', stockIn: 180, stockUsed: 90, minStockLevel: 20, notes: '소형 사이즈 추가 요청' },
-//     { productId: 15, category: '객실용품', productName: '우산', stockIn: 80, stockUsed: 20, minStockLevel: 10, notes: '로비 대여용' },
-//     { productId: 16, category: '객실용품', productName: '배스로브', stockIn: 120, stockUsed: 50, minStockLevel: 10, notes: '드라이클리닝 필수' },
-//     { productId: 17, category: '미니바', productName: '와인 미니병', stockIn: 100, stockUsed: 80, minStockLevel: 20, notes: '고객요청 시 제공' },
-//     { productId: 18, category: '미니바', productName: '초콜릿 바', stockIn: 500, stockUsed: 300, minStockLevel: 60, notes: '냉장보관' },
-//     { productId: 19, category: '욕실용품', productName: '면봉', stockIn: 600, stockUsed: 400, minStockLevel: 100, notes: '리필 시 멸균 필요' },
-//     { productId: 20, category: '욕실용품', productName: '화장솜', stockIn: 350, stockUsed: 180, minStockLevel: 40, notes: '면 100% 제품' },
+//     { productId: 12, category: '미니바', productName: '오렌지주스', stockIn: 250, stockUsed: 200, minStockLevel: 40, notes: '유통기한 확인 필요' }
 // ];
 
 // setuserList(userList);

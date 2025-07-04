@@ -21,6 +21,19 @@ function mypagePrint(){
         if ( rList[i].userCode == userCode ){
             let reservation = rList[i];
             let pname = getPname(reservation.pcode);
+            if ( reservation.rCondition == '취소' || reservation.rCondition == '퇴실완료' ){
+                html += `<tr>
+                        <td>${pname}</td>
+                        <td>${reservation.inDate}</td>
+                        <td>${reservation.outDate}</td>
+                        <td>${reservation.rRequest}</td>
+                        <td>${reservation.rCondition}</td>
+                        <td>
+                            <button onclick = "deleteBtn(${reservation.rcode})">삭제</button>
+                        </td>
+                     </tr>`
+                     continue;
+            }
             html += `<tr>
                         <td>${pname}</td>
                         <td>${reservation.inDate}</td>
