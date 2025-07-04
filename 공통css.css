@@ -29,7 +29,7 @@ button{
 }
 
 #headerwrap {
-    background-color: #c0d968;
+    background-color: #f1f1f1;
 }
 
 /* 헤더 */
@@ -94,7 +94,7 @@ button{
     padding: 5px;
     border: none;
     border-radius: 30px;
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     color: #fff;
     font-size: 20px;
 }
@@ -150,7 +150,7 @@ button{
     padding: 5px;
     border: none;
     border-radius: 30px;
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     color: black;
     font-size: 15px;
     margin-left: 700px;
@@ -161,7 +161,7 @@ button{
 
 
 .logoutBtn{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     margin-left: 10px;
     padding: 2px;
     width: 80px;

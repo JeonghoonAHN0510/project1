@@ -20,7 +20,7 @@
 }
 
 #headerwrap {
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     width : 100%
 }
 
@@ -84,7 +84,7 @@
     padding: 15px 20px;
     border: none;
     border-radius: 30px;
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     color: #fff;
     font-size: 20px;
     font-weight: bold;

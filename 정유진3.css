@@ -13,7 +13,7 @@
     margin-top: 30px;
 }
 .logoutBtn{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     margin-left: 10px;
     padding: 2px;
     width: 80px;
@@ -39,7 +39,7 @@
     border-bottom: 1px solid #c1c1c1;
 }
 .re_sidebar_select{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     border: 2px solid white;
 }
 a{

@@ -38,7 +38,7 @@ li{
     border-bottom: 1px solid #c1c1c1;
 }
 .re_sidebar_select{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     border: 2px solid white;
 }
 /*==========================본문 내용 CSS==========================*/
@@ -68,7 +68,7 @@ li{
     height: 50px;
     color: white;
     border: none;
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     border-radius: 20px;
     font-size: 15px;
 }
@@ -84,7 +84,7 @@ li{
     text-align: right;
 }
 .logoutBtn{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     margin-left: 10px;
     padding: 2px;
     width: 80px;
