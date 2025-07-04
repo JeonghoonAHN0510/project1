@@ -119,7 +119,7 @@ let rList = [
     { rcode: 45, userCode: 30, pcode: 14, rRequest: '', inDate: '2025-07-05', outDate: '2025-07-06', people: 5, rCondition: '예약완료' }
 ];
 
-
+//---------------set get-----------------//
 
 function setrList(rList) {
     localStorage.setItem('rList', JSON.stringify(rList));
@@ -153,6 +153,7 @@ function getuserList(userList) {
     }
 }
 
+//---------------------print-----------------------//
 m_print();
 function m_print() {
     console.log("m_ print exe");
