@@ -30,7 +30,7 @@ li{
     border-bottom: 1px solid #c1c1c1;
 }
 .m_sidebar_select{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     border: 2px solid white;
 }
 .m_table_div{
@@ -60,7 +60,7 @@ li{
 .m_table > tbody > tr  > td > button{
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: #c0d968;
+    background-color: #f1f1f1;
 }
 .m_table > tbody > tr:nth-child(odd){
     background-color: #eeeeee;
@@ -71,7 +71,7 @@ li{
 
 /*---------------hover---------------*/
 .m_table > tbody > tr:hover{
-    background-color: #c0d968;
+    background-color: #cdcdcd;
 }
 
 
@@ -99,7 +99,7 @@ li{
 }
 
 .logoutBtn{
-    background-color: #c0d968;
+    background-color: #f1f1f1;
     margin-left: 10px;
     padding: 2px;
     width: 80px;
