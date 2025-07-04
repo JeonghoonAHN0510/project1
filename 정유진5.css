@@ -40,6 +40,9 @@
     width: 800px;
     margin: 10px auto;
 }
+.end{
+    margin-bottom: 50px;
+}
 /*수정*/
 .logoutBtn{
     background-color: #f1f1f1;
