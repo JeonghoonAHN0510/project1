@@ -126,5 +126,26 @@ for (let i = 0; i <= userList.length - 1; i++) {
 }
 
 
+function pwdPrint(){
+  let pwd = document.querySelector('#signup_pwd');
+  let img = document.querySelector('.imgpwd');
+  if( pwd.type =='text'){
+    pwd.type = "password";
+    img.src = "KakaoTalk_20250702_172831311.png";
+  }else{ 
+    pwd.type ="text"
+    img.src = "KakaoTalk_20250702_173318028.png";
+  }
+}
 
-
+function pwdPrint1(){
+  let pwd1 = document.querySelector('#confirmPassword');
+  let img1 = document.querySelector('.imgpwd1');
+  if( pwd1.type =='text'){
+    pwd1.type = "password";
+    img1.src = "KakaoTalk_20250702_172831311.png";
+  }else{ 
+    pwd1.type ="text"
+    img1.src = "KakaoTalk_20250702_173318028.png";
+  }
+}

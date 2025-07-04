@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>StayPlan</title>
     <link rel="shortcut icon" href="stayplan logo.png">
     <link rel='stylesheet' href='박옥선.css'>
 </head>
+
 <body>
-    <div id="wrap">  <!--전체 감싼구역-->
+    <div id="wrap"> <!--전체 감싼구역-->
         <div id="headerwrap"> <!--header-->
             <div id="header">
                 <div class="logo">
@@ -19,20 +21,26 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="container"> <!-- main -->
             <h1> 회원가입 </h1>
-            <div id="signup"> 
+            <div id="signup">
                 <input id="signup_name" type="text" placeholder="성함" /> <br />
                 <input id="signup_phone" type="text" placeholder="전화번호" /><br />
                 <input id="signup_email" type="email" placeholder="이메일" /> <br />
-                <input id="signup_pwd" type="password" placeholder="비밀번호" /> <br />
-                <input id="confirmPassword" type="password" placeholder="비밀번호 확인" /><br />
+                <div class = "pwdBox">
+                    <input id="signup_pwd" type="password" placeholder="비밀번호" /> <br />
+                    <img class="imgpwd" src="KakaoTalk_20250702_172831311.png" onclick="pwdPrint()">
+                </div>
+                <div class = "pwdBox1">
+                    <input id="confirmPassword" type="password" placeholder="비밀번호 확인" /><br />
+                    <img class="imgpwd1" src="KakaoTalk_20250702_172831311.png" onclick="pwdPrint1()">
+                </div>
                 <div><input type="checkbox" id="termsAgreement">이용약관 및 개인정보 처리방침에 동의합니다. </div>
-                
+
             </div>
             <button onclick="signupBotton()" class="btnSignup"> 회원가입 </button>
-           <!-- <div class="login_link">
+            <!-- <div class="login_link">
                 <p> 이미 회원이신가요 ? <a href="#Z"> 로그인 </a></p>
             </div> -->
         </div>
@@ -46,4 +54,5 @@
     </div>
     <script src='박옥선.js'></script>
 </body>
+
 </html>
