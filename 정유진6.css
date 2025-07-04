@@ -1,0 +1,12 @@
+#img1{
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+#main > ul div{
+    width: 800px;
+    margin: 10px auto;
+}
+#main{
+    text-align: center;
+}
