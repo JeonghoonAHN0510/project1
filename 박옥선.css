@@ -149,3 +149,7 @@
 .agreeMent{
     margin-left: 8px;
 }
+.agreeBox{
+    height: 150px;
+    overflow-y: scroll;
+}
